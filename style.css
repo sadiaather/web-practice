@@ -22,7 +22,7 @@ ul {
     justify-content: end;
     text-decoration: none;
     list-style-type: none;
-    gap: 30px;
+    gap: 20px;
 
 }
 
@@ -39,6 +39,7 @@ li {
 i {
     width: 30px;
     height: 30px;
+    font-size: xx-large;
 }
 
 /* hero section */
@@ -110,8 +111,8 @@ input {
 }
 
 .pic img {
-    width: 650px;
-    height: 600px;
+    width: 600px;
+    height: 500px;
     position: absolute;
     bottom: -20px;
     right: 0px;
@@ -267,10 +268,10 @@ button {
 }
 
 .three {
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
     position: relative;
-    right: 80px;
+    right: 140px;
     bottom: 50px;
 }
 
@@ -284,14 +285,14 @@ button {
 
     ul {
         display: inline-flex;
-        justify-content: end;
+
         text-decoration: none;
         list-style-type: none;
-        gap: 30px;
+
     }
 
     li img {
-        width: 50px;
+        width: 60px;
         height: 50px;
         margin-top: -10px;
     }
@@ -302,7 +303,9 @@ button {
 
     i {
         display: none;
-        margin: 70px;
+        margin: 50px;
+        font-size: xx-large;
+        font-weight: bolder;
     }
 
     span {
@@ -321,19 +324,29 @@ button {
         background: #FEFEFF;
         border: 1px solid #BEBEBE
     }
+
 }
 
 @media screen and (max-width:480px) {
 
+    .logo img {
+        width: 300px;
+
+    }
 
     .pic img {
-        flex-wrap: wrap;
-        width: 200px;
+
+
+        width: 300px;
         height: 200px;
+        bottom: 250px;
+
+
     }
 
     button {
         border-radius: 20px;
+
     }
 
     .next img {
@@ -341,5 +354,38 @@ button {
         width: 200px;
         height: 200px;
         border-radius: 14px;
+    }
+
+    .three {
+        flex-direction: column;
+        width: 400px;
+        height: 300px;
+
+    }
+
+    .newsletter button {
+        top: -70px;
+        left: 250px;
+    }
+
+    .content button {
+        top: -70px;
+        left: 270px;
+    }
+
+    .newsletter {
+
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .next {
+
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+
     }
 }
